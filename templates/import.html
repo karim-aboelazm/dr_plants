@@ -1,0 +1,595 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plant Disease Diagnosis</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-area">
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="index.html" class="nav-brand" style="font-family: 'Rubik Moonrocks', cursive;"><span style="color:#fff;">Dr.</span><span style="color:green;">Plants</span></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#about-us">About</a></li>
+                                    <li><a href="shop.html">Our Team</a></li>
+                                </ul>
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- ##### Hero Area Start ##### -->
+        <section class="hero-area">
+            <div class="hero-post-slides owl-carousel">
+    
+                <!-- Single Hero Post -->
+                <div class="single-hero-post bg-overlay">
+                    <!-- Post Image -->
+                    <div class="slide-img" style="background-image: url(../static/img/bg-img/1.jpg);">
+                    </div>
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <!-- Post Content -->
+                                <div class="hero-slides-content text-center">
+                                    <h2>Plants exist in the weather and light rays that surround them</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                    <div class="welcome-btn-group">
+                                        <a href="#predict" class="btn alazea-btn mr-30">GET STARTED</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Single Hero Post -->
+                <div class="single-hero-post bg-overlay">
+                    <!-- Post Image -->
+                    <div class="slide-img bg-img" style="background-image: url(../static/img/bg-img/2.jpg);"></div>
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <!-- Post Content -->
+                                <div class="hero-slides-content text-center">
+                                    <h2>Plants exist in the weather and light rays that surround them</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                    <div class="welcome-btn-group">
+                                        <a href="#predict" class="btn alazea-btn mr-30">GET STARTED</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <!-- ##### Hero Area End ##### -->
+        <div class="container" id= "predict">
+        {% block content %}
+        {% endblock %}
+        </div>
+        <!-- ##### About Area Start ##### -->
+        <section class="about-us-area section-padding-100-0" id="about-us">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-5">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <h2>ABOUT US</h2>
+                            <p>We are leading in the plants service fields.</p>
+                        </div>
+                        <p>Quisque orci quam, vulputate non commodo finibus, molestie ac ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas dui, tempeu ullam corper in.</p>
+    
+                        <!-- Progress Bar Content Area -->
+                        <div class="alazea-progress-bar mb-50">
+                            <!-- Single Progress Bar -->
+                            <div class="single_progress_bar">
+                                <p>Office plants</p>
+                                <div id="bar1" class="barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div>
+                                    <span class="fill" data-percentage="80"></span>
+                                </div>
+                            </div>
+    
+                            <!-- Single Progress Bar -->
+                            <div class="single_progress_bar">
+                                <p>Field manager</p>
+                                <div id="bar2" class="barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div>
+                                    <span class="fill" data-percentage="70"></span>
+                                </div>
+                            </div>
+    
+                            <!-- Single Progress Bar -->
+                            <div class="single_progress_bar">
+                                <p>Landscape design</p>
+                                <div id="bar3" class="barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div>
+                                    <span class="fill" data-percentage="85"></span>
+                                </div>
+                            </div>
+    
+                            <!-- Single Progress Bar -->
+                            <div class="single_progress_bar">
+                                <p>Garden Care</p>
+                                <div id="bar4" class="barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div>
+                                    <span class="fill" data-percentage="65"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-6">
+                        <div class="alazea-benefits-area">
+                            <div class="row">
+                                <!-- Single Benefits Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-benefits-area">
+                                        <img src="../static/img/core-img/b1.png" alt="">
+                                        <h5>Quality Products</h5>
+                                        <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    </div>
+                                </div>
+    
+                                <!-- Single Benefits Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-benefits-area">
+                                        <img src="../static/img/core-img/b2.png" alt="">
+                                        <h5>Perfect Service</h5>
+                                        <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    </div>
+                                </div>
+    
+                                <!-- Single Benefits Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-benefits-area">
+                                        <img src="../static/img/core-img/b3.png" alt="">
+                                        <h5>100% Natural</h5>
+                                        <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    </div>
+                                </div>
+    
+                                <!-- Single Benefits Area -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="single-benefits-area">
+                                        <img src="../static/img/core-img/b4.png" alt="">
+                                        <h5>Environmentally friendly</h5>
+                                        <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ##### About Area End ##### -->
+    
+
+        <!-- ##### Product Area Start ##### -->
+        <section class="new-arrivals-products-area bg-gray section-padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Our Project Team</h2>
+                            <p>We have the strongest team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="shop-details.html"><img src="../static/img/bg-img/9.jpg" alt=""></a>
+                                <!-- Product Tag -->
+                               
+                                <div class="product-meta d-flex">
+                                    <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                    <a href="cart.html" class="add-to-cart-btn"></a>
+                                    <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                                </div>
+                            </div>
+                            <!-- Product Info -->
+                            <div class="product-info mt-15 text-center">
+                                <a href="shop-details.html">
+                                    <p>Cactus Flower</p>
+                                </a>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="shop-details.html"><img src="../static/img/bg-img/10.jpg" alt=""></a>
+                                <div class="product-meta d-flex">
+                                    <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                    <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                    <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                                </div>
+                            </div>
+                            <!-- Product Info -->
+                            <div class="product-info mt-15 text-center">
+                                <a href="shop-details.html">
+                                    <p>Cactus Flower</p>
+                                </a>
+                                <h6>$10.99</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="shop-details.html"><img src="../static/img/bg-img/11.jpg" alt=""></a>
+                                <div class="product-meta d-flex">
+                                    <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                    <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                    <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                                </div>
+                            </div>
+                            <!-- Product Info -->
+                            <div class="product-info mt-15 text-center">
+                                <a href="shop-details.html">
+                                    <p>Cactus Flower</p>
+                                </a>
+                                <h6>$10.99</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Product Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <a href="shop-details.html"><img src="../static/img/bg-img/12.jpg" alt=""></a>
+                                <!-- Product Tag -->
+                                <div class="product-tag sale-tag">
+                                    <a href="#">Hot</a>
+                                </div>
+                                <div class="product-meta d-flex">
+                                    <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                                    <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                    <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                                </div>
+                            </div>
+                            <!-- Product Info -->
+                            <div class="product-info mt-15 text-center">
+                                <a href="shop-details.html">
+                                    <p>Cactus Flower</p>
+                                </a>
+                                <h6>$10.99</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn alazea-btn">View All</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ##### Product Area End ##### -->
+
+        <!-- ##### Blog Area Start ##### -->
+        <section class="alazea-blog-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>LATEST NEWS</h2>
+                            <p>The breaking news about Gardening &amp; House plants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <!-- Single Blog Post Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-post mb-100">
+                            <div class="post-thumbnail mb-30">
+                                <a href="single-post.html"><img src="../static/img/bg-img/6.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <a href="single-post.html" class="post-title">
+                                    <h5>Garden designers across the country forecast ideas shaping the gardening world in 2018</h5>
+                                </a>
+                                <div class="post-meta">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
+                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
+                                </div>
+                                <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Post Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-post mb-100">
+                            <div class="post-thumbnail mb-30">
+                                <a href="single-post.html"><img src="../static/img/bg-img/7.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <a href="single-post.html" class="post-title">
+                                    <h5>2018 Midwest Tree and Shrub Conference: Resilient Plants for a Lasting Landscape</h5>
+                                </a>
+                                <div class="post-meta">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
+                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
+                                </div>
+                                <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Blog Post Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-post mb-100">
+                            <div class="post-thumbnail mb-30">
+                                <a href="single-post.html"><img src="../static/img/bg-img/8.jpg" alt=""></a>
+                            </div>
+                            <div class="post-content">
+                                <a href="single-post.html" class="post-title">
+                                    <h5>The summer coming up, it’s time for both us and the flowers to soak up the sunshine</h5>
+                                </a>
+                                <div class="post-meta">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2018</a>
+                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
+                                </div>
+                                <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ##### Blog Area End ##### -->
+
+        <!-- ##### Subscribe Area Start ##### -->
+        <section class="subscribe-newsletter-area" style="background-image: url(../static/img/bg-img/subscribe.png);">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-lg-5">
+                        <!-- Section Heading -->
+                        <div class="section-heading mb-0">
+                            <h2>Join the Newsletter</h2>
+                            <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="subscribe-form">
+                            <form action="#" method="get">
+                                <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Enter your email">
+                                <button type="submit" class="btn alazea-btn">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscribe Side Thumbnail -->
+            <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
+                <img class="first-img" src="../static/img/core-img/leaf.png" alt="">
+            </div>
+        </section>
+        <!-- ##### Subscribe Area End ##### -->
+        <!-- ##### Footer Area Start ##### -->
+        <footer class="footer-area bg-img" style="background-image: url(../static/img/bg-img/3.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="#"><img src="../static/img/core-img/logo.png" alt=""></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>QUICK LINK</h5>
+                            </div>
+                            <nav class="widget-nav">
+                                <ul>
+                                    <li><a href="#">Purchase</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Payment</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Return</a></li>
+                                    <li><a href="#">Advertise</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Policities</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>BEST SELLER</h5>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="shop-details.html"><img src="../static/img/bg-img/4.jpg" alt=""></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="shop-details.html">Cactus Flower</a>
+                                    <p>$10.99</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-thumbnail">
+                                    <a href="shop-details.html"><img src="../static/img/bg-img/5.jpg" alt=""></a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="shop-details.html">Tulip Flower</a>
+                                    <p>$11.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>CONTACT</h5>
+                            </div>
+
+                            <div class="contact-information">
+                                <p><span>Address:</span> 505 Silk Rd, New York</p>
+                                <p><span>Phone:</span> +1 234 122 122</p>
+                                <p><span>Email:</span> info.deercreative@gmail.com</p>
+                                <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
+                                <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                        </div>
+                    </div>
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+
+    <script src="../static/js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="../static/js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="../static/js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="../static/js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="../static/js/active.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "import.html" %} 
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-5 mt-5">Plant Disease Diagnosis</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <label for="imageUpload mt-4">Upload leaf image </label>
+                <input type="file" name="file" class="btn btn-success" id="imageUpload" style="width:100%;height: 70px;" accept=".png, .jpg, .jpeg">
+           </form>
+           <div class="image-section mt-3" style="display:none;">
+                <img id="imagePreview"  class="img-responsive mb-3" src="#" style="width:100%;"/>
+                <button type="button" class="btn btn-success btn-lg col-12 mt-3" id="btn-predict">Predict!</button>
+            </div>
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="loader" style="display:none;"></div>
+            <p id="result" class="btn-success text-center" style="border-radius:5px;height:630px; font-size:30px;padding-top: 50%;"><span> </span></p>
+        </div>
+    </div>
+{% endblock %}
